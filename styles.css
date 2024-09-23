@@ -1,62 +1,95 @@
+/* General Styles */
 body {
-    body {
-    background-image: url(WhatsApp Image 2024-09-22 at 19.13.52_45e7c358.jpg);
-    background-size: cover;  /* Makes the background cover the entire page */
-    background-position: center;  /* Centers the background image */
-    background-repeat: no-repeat;  /* Prevents the image from repeating */
-    color: white;  /* Adjust text color for readability */
-    font-family: Arial, sans-serif;  /* Optional: font style */
-}
-section {
-    background-color: rgba(0, 0, 0, 0.5);  /* Adds a black semi-transparent background */
-    padding: 20px;
-    border-radius: 10px;
+    background-image: url('WhatsApp Image 2024-09-22 at 19.13.52_45e7c358.jpg'); /* Replace with your image */
+    background-size: cover;   /* Makes the background cover the entire page */
+    background-position: center;   /* Centers the background image */
+    background-repeat: no-repeat;   /* Prevents the image from repeating */
+    color: white;   /* Text color to contrast the background */
+    font-family: Arial, sans-serif;   /* Sets a modern, readable font */
+    margin: 0;   /* Removes default margins */
+    padding: 0;   /* Removes default padding */
 }
 
-header, footer {
-    background-color: rgba(0, 0, 0, 0.7);  /* Darker overlay for the header and footer */
-    padding: 20px;
-}
-
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
+/* Styling for the Header */
 header {
-    background-color: #282c34;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.7);   /* Semi-transparent background */
+    text-align: center;   /* Centers text */
+    padding: 20px;   /* Adds space inside the header */
+    border-bottom: 2px solid white;   /* Adds a white line under the header */
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    background-color: #333;
+header h1 {
+    font-size: 2.5em;   /* Larger heading size */
+    margin: 0;   /* Removes default margins */
 }
 
-nav ul li {
-    margin: 0 20px;
+header p {
+    font-size: 1.2em;   /* Smaller subheading */
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
+/* Styling for Each Section */
 section {
-    padding: 20px;
-    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.5);   /* Semi-transparent black background */
+    padding: 20px;   /* Adds space inside each section */
+    margin: 20px;   /* Adds space outside each section */
+    border-radius: 10px;   /* Rounds the corners */
 }
 
+/* Specific Section Styling */
+h2 {
+    font-size: 2em;   /* Makes section titles larger */
+    border-bottom: 2px solid white;   /* Adds a white underline */
+    padding-bottom: 10px;   /* Adds space below the titles */
+}
+
+/* Lists (e.g., in Research Papers and Achievements) */
+ul {
+    list-style-type: none;   /* Removes default bullet points */
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;   /* Adds space between list items */
+}
+
+li h3 {
+    font-size: 1.5em;   /* Makes the title of each research paper bigger */
+    margin: 0;
+}
+
+/* Links */
+a {
+    color: #00BFFF;   /* Light blue color for links */
+    text-decoration: none;   /* Removes underlining */
+}
+
+a:hover {
+    text-decoration: underline;   /* Underlines links when hovered */
+}
+
+/* Footer */
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
+    background-color: rgba(0, 0, 0, 0.7);   /* Semi-transparent background */
+    text-align: center;   /* Centers the footer text */
+    padding: 20px;   /* Adds space inside the footer */
+    border-top: 2px solid white;   /* Adds a white line above the footer */
+}
+
+/* Responsiveness for Smaller Screens */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;   /* Makes the header smaller on small screens */
+    }
+    
+    header p, section, footer {
+        font-size: 1em;   /* Adjusts font size for readability on small screens */
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    li h3 {
+        font-size: 1.2em;
+    }
 }

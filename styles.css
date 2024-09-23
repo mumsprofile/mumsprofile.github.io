@@ -1,8 +1,6 @@
 /* General Styles */
 body {
-    background-image: url('WhatsApp Image 2024-09-22 at 19.13.52_45e7c358.jpg'); /* Replace with your image */
-    background-size: cover;   /* Makes the background cover the entire page */
-    background-position: center;   /* Centers the background image */
+    background: linear-gradient(to bottom right, #0f2027, #2c5364, #203a4d); /* Gradient background */
     background-repeat: no-repeat;   /* Prevents the image from repeating */
     color: white;   /* Text color to contrast the background */
     font-family: Arial, sans-serif;   /* Sets a modern, readable font */

@@ -4,7 +4,7 @@ body {
     background-size: cover;   /* Makes the background cover the entire page */
     background-position: center;   /* Centers the background image */
     background-repeat: no-repeat;   /* Prevents the image from repeating */
-    color: brown;   /* Text color to contrast the background */
+    color: white;   /* Text color to contrast the background */
     font-family: Arial, sans-serif;   /* Sets a modern, readable font */
     margin: 0;   /* Removes default margins */
     padding: 0;   /* Removes default padding */
